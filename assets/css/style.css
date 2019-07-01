@@ -1,0 +1,264 @@
+body {
+    background: url("../images/furley_bg_@2X.png");
+    background-repeat: repeat;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    margin-bottom: 30px;
+    border-bottom: #cccccc solid 2px;
+    background: #ffffff;
+}
+
+p, 
+li, 
+footer, 
+label, 
+input[type="submit" i]  {
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    color: #777777;
+}
+
+h1, 
+h2, 
+.caption {
+    font-family: 'Georgia', Times, Times New Roman, serif;
+}
+
+h1 {
+    color: white;
+    background-color: #4aaaa5;
+    text-align: center;
+    font-size: 27px;
+    font-weight: bold;
+    width: fit-content;
+    padding: 25px;
+    display: inline-block;
+}
+
+h1:hover {
+    background-color: #2F6B68;
+}
+
+h2 {
+    color: #4aaaa5;
+    text-align: left;
+    font-size: 27px;
+    font-weight: bold;
+    padding-bottom: 20px;
+    border-bottom: #ddd solid 4px;
+    margin-bottom: 20px;
+}
+
+.header-nav {
+    width:100%
+}
+
+nav {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: inline-block;
+}
+
+nav a, 
+a:link, 
+a:visited {
+    text-decoration: none;
+    color: #777777;
+}
+
+nav li {
+    display: inline-block;
+    padding: 0 20px;
+    border-right: #ddd solid 1px;
+    margin: 30px 0;
+}
+
+nav a:hover {
+    color: #2F6B68;
+}
+
+nav .last-item {
+    border-right: none;
+    padding-right: 0;
+}
+
+p {
+    padding-bottom: 20px;
+    line-height: 2em;
+}
+
+.headshot {
+    width: 240px;
+    float: left;
+    margin-right: 20px;
+    margin-top: 9px;
+}
+
+.header {
+    width: 960px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.main-content {
+    border: #dddddd solid 1px;
+    width: 960px;
+    padding: 25px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background: #ffffff;
+}
+
+footer {
+    color: white;
+    background-color: #777777;
+    border-top: #4aaaa5 solid 8px;
+    text-align: center;
+    font-size: 13px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    position: fixed;
+    bottom: 0px;
+    width:100%;
+
+}
+
+label {
+    display: block;
+    margin-bottom: 15px;
+
+}
+
+label input, 
+textarea {
+    width: 100%;
+    border: #777777 solid 1px;
+    padding: 10px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-top: 10px;
+    font-size: 16px;
+    color: #777777;
+}
+
+textarea {
+    height: 14em;
+}
+
+input[type="submit" i] {
+    background-color: #4aaaa5;
+    padding: 10px 20px;
+    color: #ffffff;
+    border: none;
+    font-size: 16px;
+}
+
+input[type="submit" i]:hover {
+    background-color: #2F6B68;
+}
+
+.portfolio-item {
+    display: inline-block;
+    margin: 0 auto;
+    width: 49%;
+}
+
+.portfolio-item img, .background{
+    width: 260px;
+    height: 195px;
+    margin: 0 auto;
+}
+
+.caption {
+    display: block;
+    text-align: center;
+    background-color: #4aaaa5;
+    color: #ffffff;
+    padding: 15px 0;
+    position: relative;
+    top: -70px;
+    font-size: 21px;
+    width: 260px;
+    margin: 0 auto;
+}
+
+.portfolio-item:hover .caption {
+    background-color: #2F6B68;
+}
+
+.portfolio-item:hover .background {
+    background-color: #4aaaa5;
+}
+
+.portfolio-item:hover img {
+    opacity: 0.5;
+}
+
+@media screen and (max-width: 980px) {
+    
+    .main-content, 
+    .header {
+        width: 748px;
+    }
+
+}
+        
+@media screen and (max-width: 768px) {
+
+    .main-content, 
+    .header {
+        width: 640px;
+    }
+
+    .headshot {
+        width: 50%;
+    }
+
+}
+
+@media screen and (max-width: 640px) {
+   
+    .main-content,
+    .header,
+    h1 {
+        width: 100%;
+    }
+
+    h1 {
+        padding: 25px 0;
+    }
+
+    .header-nav {
+        text-align: center;
+    }
+
+    nav li {
+        margin: 20px 0;
+    }
+
+    nav .last-item {
+        padding-right: 20px;
+    }
+
+    .headshot {
+        width: 100%;
+        margin: 0 0 20px 0;
+    }
+
+    nav {
+        position: relative;
+        width: 100%;
+        display: block;
+    }
+
+    .portfolio-item {
+        width: 100%;
+    }
+}
