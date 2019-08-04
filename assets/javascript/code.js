@@ -31,10 +31,10 @@ $(".portfolio-item p").hide();
 
 $(".portfolio-item").mouseenter(function() {
     console.log("portfolio hover");
-    $(this).children("a").children(".caption").children("p").show(500);
+    $(this).children(".caption").children("p").show(500);
 });
 
 $(".portfolio-item").mouseleave(function() {
     console.log("portfolio hover");
-    $(this).children("a").children(".caption").children("p").hide(500);
+    $(this).children(".caption").children("p").hide(500);
 });

@@ -35,7 +35,7 @@ h1 {
 }
 
 h2 {
-    color: #4aaaa5;
+    color: crimson;
     text-align: left;
     font-size: 27px;
     font-weight: bold;
@@ -45,7 +45,7 @@ h2 {
 }
 
 nav {
-    background-color: #4aaaa5;
+    background-color: crimson;
 }
 
 p {
@@ -84,7 +84,7 @@ p:first-of-type {
 footer {
     color: white;
     background-color: #777777;
-    border-top: #4aaaa5 solid 8px;
+    border-top: cromson solid 8px;
     text-align: center;
     font-size: 13px;
     padding-top: 20px;
@@ -119,7 +119,7 @@ textarea {
 }
 
 input[type="submit" i] {
-    background-color: #4aaaa5;
+    background-color: crimson;
     padding: 10px 20px;
     color: #ffffff;
     border: none;
@@ -164,4 +164,12 @@ input[type="submit" i]:hover {
     margin: 0;
     line-height: 20px;
 
+}
+
+.caption i {
+    background-color: crimson;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 20px;
+    color: white;
 }
