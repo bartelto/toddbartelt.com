@@ -1,39 +1,171 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content= "width-device-width, initial-scale=1">
-    <title>Todd Bartelt, Web Developer</title>
-    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Todd Bartelt, Software Developer</title>
+    <!-- jQuery CDN -->
+    <script
+        src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+        crossorigin="anonymous"></script>
+    <script
+        src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"
+        integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30="
+        crossorigin="anonymous"></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Oswald|Raleway&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/9d112d245b.js"></script>
+    <!-- My stylesheet -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
 </head>
 <body>
-    <header>
-        <section class="header">
-            <a href="index.html"><h1>Todd Bartelt</h1></a>
-            <div class="header-nav">
-                <nav>
-                    <ul>
-                        <li><a href="index.html">About</a></li><!--
-                        --><li><a href="portfolio.html">Portfolio</a></li><!--
-                        --><li class="last-item"><a href="contact.html">Contact</a></li>
-                    </ul>
-                </nav>
+
+    <nav class="navbar navbar-expand-lg navbar-dark" id="my-navbar">
+        <a class="navbar-brand" href="#">Todd Bartelt</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">About <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#portfolio">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="mailto:toddfbartelt@gmail.com">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container main-content">
+        <div class="row">
+            <div class="col-md-12">
+                <h2>About Todd</h2>
             </div>
-        </section>
-    </header>
-   
-    <section class="main-content">
-        <h2>About Todd</h2>
-        <img class="headshot" src="assets/images/Todd-Bartelt.jpg" alt="Headshot of Todd Bartelt">
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <img src="assets/images/Todd-Bartelt.jpg" class="img-thumbnail" alt="A handsome web developer">
+            </div>
+            <div class="col-md-9">
+                <p>Todd may be a web developer in training, but he’s hardly new to coding. Todd first learned to code when he was in 5th grade after his science teacher gave him a book about Apple BASIC. Todd eagerly ate up the material, and started writing his own programs after school while waiting for his mom (a fourth-grade teacher) to finish up each day.</p>
 
-        <p>Todd may be a web developer in training, but he’s hardly new to coding. Todd first learned to code when he was in 5th grade after his science teacher gave him a book about Apple BASIC. Todd eagerly ate up the material, and started writing his own programs after school while waiting for his mom (a fourth-grade teacher) to finish up each day.</p>
+                <p>But a career in programming was not at all an obvious choice back then, and because Todd had a talent for math and science, he ended up pursuing a more-conventional career in mechanical engineering. Like programming, engineering fed his desire to create cool stuff and to solve problems. But ironically, while Todd was pursuing his master’s degree in mechanical engineering, the project he was most excited about? A website he built in his spare time to share about the growth of his 20-pound rubber band ball.</p>
+                
+                <p>Now, after a decade of meandering in his career, Todd is finally returning to web development — and this time, he’s serious. He’s learning a lot at the University of Kansas’ Coding Boot Camp, but it’s hard work, so please use the <a href="contact.html">Contact</a> page to encourage him!</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container main-content" id="portfolio">
+        <div class="row">
+            <div class="col-md-12 ">
+                <h2>Portfolio</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-lg-4 text-center">
+                <section class="portfolio-item">
+                    <a href="https://bartelto.github.io/word-guess-game">
+                        <div class="background">
+                            <img src="assets/images/hangman.jpg" alt="Word Guess Game">
+                        </div>
+                        <div class="caption">
+                            <h1>Ferris Bueller Word Guess</h1>
+                            <p>How well do you know the characters from John Hughes' beloved 1986 film?
+                                <i class="fas fa-link"></i>
+                                <i class="fab fa-github"></i>
+                            </p>
+                        </div>
+                    </a>
+                </section>
+            </div>
+            <div class="col-md-6 col-lg-4 text-center">
+                <section class="portfolio-item">
+                    <a href="https://bartelto.github.io/giftastic">
+                        <div class="background">
+                            <img src="assets/images/giftastic.jpg" alt="GIFtastic">
+                        </div>
+                        <div class="caption">
+                            <h1>GIFtastic</h1>
+                            <p>Find and fave the best GIFs to fit your mood.
+                                <i class="fas fa-link"></i>
+                                <i class="fab fa-github"></i>
+                            </p>
+                        </div>
+                    </a>
+                </section>
+            </div>
+            <div class="col-md-6 col-lg-4 text-center">
+                <section class="portfolio-item">
+                    <a href="https://bartelto.github.io/triviagame">
+                        <div class="background">
+                            <img src="assets/images/trivia-game.jpg" alt="Trivia Game">
+                        </div>
+                        <div class="caption">
+                            <h1>Back to the Future Trivia</h1>
+                            <p>Test your knowledge of this classic 80's comedy.
+                                <i class="fas fa-link"></i>
+                                <i class="fab fa-github"></i>
+                            </p>
+                        </div>
+                    </a>
+                </section>
+            </div>
+            <div class="col-md-6 col-lg-6 text-center">
+                <section class="portfolio-item">
+                    <a href="https://bartelto.github.io/project-1">
+                        <div class="background">
+                            <img src="assets/images/war-of-words.png" alt="War of Words">
+                        </div>
+                        <div class="caption">
+                            <h1>War of Words</h1>
+                            <p>The classic card game, plus synthesized voice chat!
+                                <i class="fas fa-link"></i>
+                                <i class="fab fa-github"></i>
+                            </p>
+                        </div>
+                    </a>
+                </section>
+            </div>
+            <div class="col-md-12 col-lg-6 text-center">
+                <section class="portfolio-item">
+                    <a href="https://bartelto.github.io/rps-multiplayer">
+                        <div class="background">
+                            <img src="assets/images/rock-paper-scissors.jpg" alt="Rock Paper Scissors">
+                        </div>
+                        <div class="caption">
+                            <h1>RPS Arena</h1>
+                            <p>A multiplayer version of Rock/Paper/Scissors.
+                                <i class="fas fa-link"></i>
+                                <i class="fab fa-github"></i>
+                            </p>
+                        </div>
+                    </a>
+                </section>
+            </div>
+        </div>
+    </div>
 
-        <p>But a career in programming was not at all an obvious choice back then, and because Todd had a talent for math and science, he ended up pursuing a more-conventional career in mechanical engineering. Like programming, engineering fed his desire to create cool stuff and to solve problems. But ironically, while Todd was pursuing his master’s degree in mechanical engineering, the project he was most excited about? A website he built in his spare time to share about the growth of his 20-pound rubber band ball.</p>
-        
-        <p>Now, after a decade of meandering in his career, Todd is finally returning to web development — and this time, he’s serious. He’s learning a lot at the University of Kansas’ Coding Boot Camp, but it’s hard work, so please use the <a href="contact.html">Contact</a> page to encourage him!</p>
-    </section>
-    <footer>
-        Copyright &copy;2019
+    <footer class="footer mt-auto py-3">
+        <div class="container">
+            <span>Copyright &copy;2019</span>
+        </div>
     </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first (above), then Popper.js, then Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="assets/javascript/code.js"></script>
 </body>
-</html> 
+</html>

@@ -1,88 +1,109 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content= "width-device-width, initial-scale=1">
-        <title>Portfolio</title>
-        <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    </head>
-    <body>
-        <header>
-            <section class="header">
-                    <a href="index.html"><h1>Todd Bartelt</h1></a>
-                    <div class="header-nav">
-                        <nav>
-                            <ul>
-                                <li><a href="index.html">About</a></li><!--
-                                --><li><a href="portfolio.html">Portfolio</a></li><!--
-                                --><li class="last-item"><a href="contact.html">Contact</a></li>
-                            </ul>
-                        </nav>
-                    </div>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Todd's Portfolio</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- My stylesheet -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark" id="my-navbar">
+        <a class="navbar-brand" href="#">Todd Bartelt</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">About</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Portfolio <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container main-content">
+        <div class="row">
+            <div class="col-md-12 ">
+                <h2>Portfolio</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-lg-4 text-center">
+                <section class="portfolio-item">
+                    <a href="#">
+                        <div class="background">
+                            <img src="assets/images/hangman.jpg" alt="Hangman">
+                        </div>
+                        <div class="caption">Hangman</div>
+                    </a>
                 </section>
-        </header>
-        <section class="main-content">
-            <h2>Portfolio</h2>
-            <section class="portfolio-item">
-                <a href="https://bartelto.github.io/rps-multiplayer/">
-                    <div class="background">
-                        <img src="assets/images/rock-paper-scissors.jpg" alt="Rock Paper Scissors">
-                    </div>
-                    <div class="caption">Rock Paper Scissors</div>
-                </a>
-            </section>
-            <section class="portfolio-item">
-                <a href="https://bartelto.github.io/giftastic">
-                    <div class="background">
-                        <img src="assets/images/giftastic.jpg" alt="GIFtastic">
-                    </div>
-                    <div class="caption">GIFtastic</div>
-                </a>
-            </section><section class="portfolio-item">
-                <a href="https://bartelto.github.io/single-div-thermometer">
-                    <div class="background">
-                        <img src="assets/images/thermometer.jpg" alt="Animated Thermometer">
-                    </div>
-                    <div class="caption">Single-Div Thermometer</div>
-                </a>
-            </section>
-            <section class="portfolio-item">
-                <a href="https://bartelto.github.io/word-guess-game">
-                    <div class="background">
-                        <img src="assets/images/hangman.jpg" alt="Hangman">
-                    </div>
-                    <div class="caption">Ferris Bueller Hangman</div>
-                </a>
-            </section>
-            <section class="portfolio-item">
-                <a href="https://bartelto.github.io/unit-4-game/">
-                    <div class="background">
-                        <img src="assets/images/rpg-game.jpg" alt="RPG Game">
-                    </div>
-                    <div class="caption">Star Wars RPG</div>
-                </a>
-            </section>
-            <section class="portfolio-item">
-                <a href="https://bartelto.github.io/triviagame/">
-                    <div class="background">
-                        <img src="assets/images/trivia-game.jpg" alt="Trivia Game">
-                    </div>
-                    <div class="caption">Trivia Game</div>
-                </a>
-            </section>
-            <section class="portfolio-item">
-                <a href="#">
-                    <div class="background">
-                        <img src="assets/images/rutgers-info-widget.jpg" alt="Rutgers Info Widget">
-                    </div>
-                    <div class="caption">Rutgers Info Widget</div>
-                </a>
-            </section>
-            
-        </section>
-        <footer>
-            Copyright &copy;2019
-        </footer>
-    </body>
+            </div>
+            <div class="col-md-6 col-lg-4 text-center">
+                <section class="portfolio-item">
+                    <a href="#">
+                        <div class="background">
+                            <img src="assets/images/rpg-game.jpg" alt="RPG Game">
+                        </div>
+                        <div class="caption">RPG Game</div>
+                    </a>
+                </section>
+            </div>
+            <div class="col-md-6 col-lg-4 text-center">
+                <section class="portfolio-item">
+                    <a href="#">
+                        <div class="background">
+                            <img src="assets/images/trivia-game.jpg" alt="Trivia Game">
+                        </div>
+                        <div class="caption">Trivia Game</div>
+                    </a>
+                </section>
+            </div>
+            <div class="col-md-6 col-lg-6 text-center">
+                <section class="portfolio-item">
+                    <a href="#">
+                        <div class="background">
+                            <img src="assets/images/rutgers-info-widget.jpg" alt="Rutgers Info Widget">
+                        </div>
+                        <div class="caption">Rutgers Info Widget</div>
+                    </a>
+                </section>
+            </div>
+            <div class="col-md-12 col-lg-6 text-center">
+                <section class="portfolio-item">
+                    <a href="#">
+                        <div class="background">
+                            <img src="assets/images/rock-paper-scissors.jpg" alt="Rock Paper Scissors">
+                        </div>
+                        <div class="caption">Rock Paper Scissors</div>
+                    </a>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer mt-auto py-3">
+        <div class="container">
+            <span>Copyright &copy;2019</span>
+        </div>
+    </footer>
+
+     <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
 </html>
