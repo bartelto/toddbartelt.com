@@ -139,17 +139,19 @@ input[type="submit" i]:hover {
 .portfolio-item {
     display: inline-block;
     position: relative;
+    margin-bottom: 20px;
 }
 
 .portfolio-item img, .background{
     width: 300px;
     height: 225px;
+    box-shadow: 0 15px 30px -10px rgba(0,0,0,0.6);
 }
 
-.caption {
+.caption {  
     display: block;
     text-align: center;
-    background-color: rgba(0,0,0,0.6);
+    background: linear-gradient(to bottom, transparent, rgba(0,0,0,0.7) 20px);
     color: #ffffff;
     padding: 10px 20px;
     position: absolute;
@@ -161,6 +163,7 @@ input[type="submit" i]:hover {
 
 .caption h1 {
     font-size: 24px;
+    margin-top: 10px;
 }
 
 .caption p {
@@ -169,6 +172,7 @@ input[type="submit" i]:hover {
     padding: 0;
     margin: 0;
     line-height: 20px;
+    margin-bottom: 5px;
 
 }
 
