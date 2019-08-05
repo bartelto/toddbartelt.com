@@ -54,6 +54,12 @@ p {
 
 }
 
+p strong {
+    font-weight: bolder;
+    color: black;
+
+}
+
 p:first-of-type {
     padding-top: 15px;
 }
