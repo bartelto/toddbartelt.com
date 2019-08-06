@@ -87,6 +87,28 @@ p:first-of-type {
     background: #ffffff;
 }
 
+#skills i,
+#skills img{
+    font-size: 60px;
+    background-color: crimson;
+    color: white;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    line-height: 100px;
+}
+
+#skills img{
+    padding: 20px;
+    margin-top:-35px;
+}
+
+#resume i {
+    font-size: 100px;
+    color: crimson;
+    margin-top: 30px;
+}
+
 footer {
     color: white;
     background-color: #777777;
