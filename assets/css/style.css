@@ -35,7 +35,7 @@ h1 {
 }
 
 h2 {
-    color: crimson;
+    color: rgb(41, 48, 64);
     text-align: left;
     font-size: 27px;
     font-weight: bold;
@@ -49,12 +49,23 @@ nav {
 }
 
 #hero-image {
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../images/4k-wallpaper-branches-daylight-1757363.jpg");
-    background-repeat: no-repeat;
+    background: transparent;
+    height: calc(100vh - 118px);
+}
+
+#hero-image:after{
+    content:"";
+    position:fixed; /* stretch a fixed position to the whole screen */
+    top:0;
+    height:100vh; /* fix for mobile browser address bar appearing disappearing */
+    left:0;
+    right:0;
+    z-index:-1; /* needed to keep in the background */
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../images/4k-wallpaper-branches-daylight-1757363.jpg") center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
-    background-position: center; 
-    background-attachment: fixed;
-    height: 100vh;
 }
 
 #hero-image h1 {
@@ -118,7 +129,7 @@ p:first-of-type {
 #skills i,
 #skills img{
     font-size: 60px;
-    background-color: crimson;
+    background-color: rgb(74, 89, 40);
     color: white;
     border-radius: 50%;
     height: 100px;
@@ -133,7 +144,7 @@ p:first-of-type {
 
 #resume i {
     font-size: 100px;
-    color: crimson;
+    color: rgb(74, 89, 40);
     margin-top: 30px;
 }
 
