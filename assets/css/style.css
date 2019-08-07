@@ -13,6 +13,7 @@ header {
 }
 
 p, 
+h3,
 li, 
 footer, 
 label, 
@@ -46,6 +47,11 @@ h2 {
 
 nav {
     background-color: rgb(64, 59, 57);
+}
+
+.navbar-nav {
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #hero-image {
@@ -128,13 +134,13 @@ p:first-of-type {
 
 #skills i,
 #skills img{
-    font-size: 60px;
+    font-size: 50px;
     background-color: rgb(74, 89, 40);
     color: white;
     border-radius: 50%;
-    height: 100px;
-    width: 100px;
-    line-height: 100px;
+    height: 90px;
+    width: 90px;
+    line-height: 90px;
 }
 
 #skills img{
@@ -162,7 +168,7 @@ footer {
 }
 
 footer a {
-    color: white;
+    color: rgba(255,255,255,.5);
     padding-left: 15px;
     padding-right: 15px;
     font-size: 20px;
