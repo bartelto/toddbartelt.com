@@ -1,5 +1,5 @@
 body {
-    background: url("../images/furley_bg_@2X.png");
+    background: rgb(41, 48, 64);
     background-repeat: repeat;
     padding: 0;
     margin: 0;
@@ -45,7 +45,35 @@ h2 {
 }
 
 nav {
-    background-color: crimson;
+    background-color: rgb(64, 59, 57);
+}
+
+#hero-image {
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../images/4k-wallpaper-branches-daylight-1757363.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; 
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+#hero-image h1 {
+    text-shadow: 0 0 10px black;
+    color: rgb(242, 242, 242);
+    text-transform: uppercase;
+}
+
+#hero-image p,
+#hero-image a
+ {
+    color: rgb(242, 242, 242);
+}
+
+#hero-image a
+ {
+    font-size: 50px;
+    position: absolute;
+    bottom: 75px;
 }
 
 p {
@@ -111,7 +139,7 @@ p:first-of-type {
 
 footer {
     color: white;
-    background-color: #777777;
+    background-color: rgb(64, 59, 57);
     border-top: cromson solid 8px;
     text-align: center;
     font-size: 13px;

@@ -2,7 +2,7 @@
 $('body').scrollspy({target: ".navbar", offset: 50});
 
 // Add smooth scrolling on all links inside the navbar
-$("#my-navbar a").on('click', function(event) {
+$("#my-navbar a, #hero-image a").on('click', function(event) {
 
   // Make sure this.hash has a value before overriding default behavior
   if (this.hash !== "") {
@@ -30,11 +30,9 @@ $("#my-navbar a").on('click', function(event) {
 $(".portfolio-item p").hide();
 
 $(".portfolio-item").mouseenter(function() {
-    console.log("portfolio hover");
     $(this).children(".caption").children("p").show(500);
 });
 
 $(".portfolio-item").mouseleave(function() {
-    console.log("portfolio hover");
     $(this).children(".caption").children("p").hide(500);
 });
