@@ -84,6 +84,7 @@ nav {
 #hero-image a
  {
     color: rgb(242, 242, 242);
+    text-shadow: 0 0 10px black;
 }
 
 #hero-image a
@@ -145,13 +146,16 @@ p:first-of-type {
 
 #skills img{
     padding: 20px;
-    margin-top:-35px;
+    margin-top: -30px;
+}   
+
+#skills div {
+    margin-top: -10px;
 }
 
 #resume i {
     font-size: 100px;
     color: rgb(74, 89, 40);
-    margin-top: 30px;
 }
 
 footer {
