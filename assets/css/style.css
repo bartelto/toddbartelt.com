@@ -43,7 +43,7 @@ h2 {
     padding-bottom: 20px;
     border-bottom: #ddd solid 4px;
     margin-bottom: 20px;
-}
+}   
 
 nav {
     background-color: rgb(64, 59, 57);
@@ -149,13 +149,13 @@ p:first-of-type {
     margin-top: -30px;
 }   
 
-#skills div {
+#skills i {
     margin-top: -10px;
 }
 
 #resume i {
     font-size: 100px;
-    color: rgb(74, 89, 40);
+    color: rgb(74, 89, 40); 
 }
 
 footer {
@@ -264,4 +264,37 @@ input[type="submit" i]:hover {
     border-radius: 50%;
     font-size: 20px;
     color: white;
+}
+
+/* special header with accent lines */
+.special-header {
+    display: inline-block;
+    position: relative;
+}
+
+.accent:before, 
+.accent:after {
+    content: "";
+    width: 50px;
+    height: 2px;
+    position: absolute;
+    top: 0.5em;
+}
+
+.accent:after { /* left side */
+    background-image: linear-gradient(to left, gray, transparent);
+    right: 100%;
+    margin-right: 10px;
+}
+.accent:before { /* right side */
+    background-image: linear-gradient(to right, gray, transparent);
+    left: 100%;
+    margin-left: 10px;
+}
+
+/* media queries */
+@media screen and (max-width: 736px) {
+    .row > section, .row > article {
+        margin-bottom: 2em;
+    }
 }
