@@ -96,7 +96,7 @@ nav {
 
 p {
     padding-bottom: 10px;
-    line-height: 2em;
+    line-height: 1.5em;
 
 }
 
@@ -104,16 +104,6 @@ p strong {
     font-weight: bolder;
     color: black;
 
-}
-
-p:first-of-type {
-    padding-top: 15px;
-}
-
-.headshot {
-    width: 240px;
-    margin-right: 20px;
-    margin-top: 9px;
 }
 
 .header {
