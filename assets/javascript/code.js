@@ -36,3 +36,19 @@ $(".portfolio-item").mouseenter(function() {
 $(".portfolio-item").mouseleave(function() {
     $(this).children(".caption").children("p").hide(500);
 });
+
+// Skills animation
+$(".skill").mouseenter(function() {
+  $(".skill").not(this).addClass("blur-skill");
+  let flag = new $("<p>")
+    .text( $(this).attr("data-name") )
+    .addClass("flag");  
+  $(this)
+    .css( 'z-index', "2")
+    .append( flag );
+});
+
+$(".skill").mouseleave(function() {
+  $(".skill").removeClass("blur-skill");
+  //  $(this).empty();
+});
