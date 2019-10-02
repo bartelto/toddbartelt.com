@@ -49,8 +49,50 @@
     </nav>
 
     <div class="jumbotron" id="hero-image">
-        <h1 class="display-4">Todd F. Bartelt</h1>
-        <p class="lead">Software Developer</p>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-3">
+                    <h1 class="display-4">Todd F. Bartelt</h1>
+                    <p class="lead">Software Developer</p>
+                    
+                </div>
+                <div class="col-md-9 crawl-container">
+                    <div class="crawl"><pre><code>function updateMatches() {
+    // use AJAX to send a request for match data
+    $.get(`api/matches/${currentFBUser.email}`, function(data) {
+
+        if (data.length === 0) {
+            $("#matches-display-section").append("&lt;h3&gt;Sorry, you have no matches!&lt;h3&gt;");
+        } else {
+            // copy the template's contents and add them to a new &lt;div&gt;
+            data.forEach( function(match) {
+                let newMatch = $profileTemplate.children().clone().removeAttr("hidden").appendTo("#matches-display-section");
+                newMatch.attr("data-user-id",match.id);
+                newMatch.find(".match-name").text(match.screenName); 
+                newMatch.attr("data-email",match.authId);
+                newMatch.find(".match-image").attr("src",match.imageUrl);
+            });
+        }
+    });
+}
+
+// Firebase authentication
+firebase.auth().onAuthStateChanged(function(user) {
+    if (user) {
+        // User is signed in.
+        console.log(user.email + " is logged in.");
+        currentFBUser = user;
+        updateMatches();
+    } else {
+        // User is signed out.
+        console.log("No user logged in.");
+        window.location.href = "/"; // back to login screen
+    }
+});
+                    </code></pre></div>
+                </div>
+            </div>
+        </div>
         <a href="#about" role="button"><i class="fas fa-chevron-circle-down"></i></a>
     </div>
 
