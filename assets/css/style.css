@@ -3,13 +3,16 @@ body {
     background-repeat: repeat;
     padding: 0;
     margin: 0;
-   
 }
 
 header {
     margin-bottom: 30px;
     border-bottom: #cccccc solid 2px;
     background: #ffffff;
+}
+
+.jumbotron {
+    overflow: hidden;
 }
 
 p, 
@@ -110,6 +113,28 @@ p strong {
     width: 960px;
     margin: 0 auto;
     position: relative;
+}
+
+.crawl-container {
+    perspective: 1000px;
+}
+
+.crawl {
+    position: relative;
+    top: 0px;
+    transform-origin: 50% 100%;
+    transform: rotateY(-25deg);
+    margin-top: -10%;
+    opacity: 0.5;
+  }
+
+pre {
+    overflow: hidden;
+}
+
+pre code {
+    color: white;
+    font-size: 150%;
 }
 
 .main-content {
@@ -305,5 +330,13 @@ input[type="submit" i]:hover {
 @media screen and (max-width: 736px) {
     .row > section, .row > article {
         margin-bottom: 2em;
+    }
+
+    .crawl {
+        margin-top: 0;
+    }
+
+    pre code {
+        font-size: 100%;
     }
 }
