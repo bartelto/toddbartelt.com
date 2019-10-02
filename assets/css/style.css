@@ -117,15 +117,12 @@ p strong {
 
 .crawl-container {
     perspective: 1000px;
-
 }
 
 .crawl {
     position: relative;
     top: 0px;
     transform-origin: 50% 100%;
-    /*animation: crawl 15s linear;
-    animation-iteration-count: 2;*/
     transform: rotateY(-25deg);
     margin-top: -10%;
     opacity: 0.5;
@@ -138,17 +135,6 @@ pre {
 pre code {
     color: white;
     font-size: 150%;
-}
-
-@keyframes crawl {
-	0% {
-        top: calc(100vh + 100px);
-        /*transform: rotateY(25deg) translateZ(-500px);*/
-    }
-	100% { 
-        top: 1000px;
-        /*transform: rotateY(-25deg) translateZ(0);*/
-    }
 }
 
 .main-content {
