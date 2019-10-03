@@ -347,8 +347,14 @@ input[type="submit" i]:hover {
         margin-bottom: 2em;
     }
 
+    .crawl-container {
+        perspective: 0;
+    }
+
     .crawl {
         margin-top: 0;
+        transform-origin: 50% 100%;
+        transform: none;
     }
 
     pre code {
