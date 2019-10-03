@@ -149,7 +149,8 @@ pre code {
 }
 
 #skills i,
-#skills img{
+#skills img,
+.express {
     font-size: 50px;
     background-color: rgb(74, 89, 40);
     color: white;
@@ -169,10 +170,24 @@ pre code {
     
 }
 
+#skills .jquery {
+    margin-top: -28px;
+}
+
+.express {
+    display: inline-block;
+    font-size: 20px;
+    font-family: "helvetica neue", "open sans", sans-serif;
+    font-weight: 100;
+    margin-top: -10px;
+}
+
 #resume i {
     font-size: 100px;
     color: rgb(74, 89, 40); 
 }
+
+
 
 footer {
     color: white;
@@ -338,5 +353,13 @@ input[type="submit" i]:hover {
 
     pre code {
         font-size: 100%;
+    }
+
+    .hide-if-mobile {
+        display: none;
+    }
+
+    .show-if-mobile {
+        display: block!important;
     }
 }
