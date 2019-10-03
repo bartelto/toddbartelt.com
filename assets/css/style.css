@@ -100,19 +100,41 @@ nav {
 p {
     padding-bottom: 10px;
     line-height: 1.5em;
+}
 
+#about p:last-of-type {
+    padding-bottom: 0;
+    margin-bottom: 0;
 }
 
 p strong {
     font-weight: bolder;
     color: black;
 
-}
+}   
 
 .header {
     width: 960px;
     margin: 0 auto;
     position: relative;
+}
+
+#headshot2 {
+    background: url("../images/Todd-Bartelt.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 75% center;
+}
+
+#headshot {
+    object-fit: cover;
+    object-position: 100% 0;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    float:right;
+    margin-top: -93px;
+    display: none;
 }
 
 .crawl-container {
@@ -361,11 +383,23 @@ input[type="submit" i]:hover {
         font-size: 100%;
     }
 
+
+/*
+    #headshot2 {
+        display: none;
+    }
+*/
     .hide-if-mobile {
         display: none;
     }
 
     .show-if-mobile {
         display: block!important;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    #headshot {
+        display: inline!important;
     }
 }
