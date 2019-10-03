@@ -127,27 +127,39 @@ firebase.auth().onAuthStateChanged(function(user) {
             </div>
         </div>
         <div class="row">
-            <div class="col-md-1">
-            </div>
-            <section class="col-md-4 text-center" id="skills">
+            <section class="col-md-5 text-center" id="skills">
                 <div class="special-header">
                     <h3 class="accent">Skills</h3>
                 </div>
                 <p>See <a href="http://linkedin.com/in/todd-bartelt">LinkedIn</a> for a complete list.
                 <div>
-                        <i class="fab fa-html5"></i>
-                        <i class="fab fa-css3-alt"></i>
+                    <i class="fab fa-html5"></i>
                 </div>
                 <div>
+                    <i class="fab fa-css3-alt"></i>
                     <i class="fab fa-bootstrap"></i>
+                </div>
+                <div>
+                    <img src="assets/images/jQuery.png" class="jquery">
                     <i class="fab fa-js-square"></i>
                     <i class="fab fa-node-js"></i>
                 </div>
-                <div>
-                    <img src="assets/images/jQuery.png">
-                    <!--<img src="assets/images/Firebase.png">-->
+                <div class="hide-if-mobile">
+                    <img src="assets/images/Firebase.png">
                     <img src="assets/images/mysql.png">
-                </div>  
+                    <img src="assets/images/mongodb.png">
+                    <div class="express">Express</div>
+                </div>
+                <div class="show-if-mobile" hidden>
+                    <div>
+                        <!--<img src="assets/images/Firebase.png">-->
+                        <img src="assets/images/mysql.png">
+                        <img src="assets/images/mongodb.png">
+                    </div>
+                    <div>
+                        <div class="express">Express</div>
+                    </div>
+                </div>    
             </section>
 
             <section class="col-md-2 text-center" id="resume">
@@ -160,7 +172,7 @@ firebase.auth().onAuthStateChanged(function(user) {
                 </a>
             </section>
 
-            <section class="col-md-4 text-center" id="education">
+            <section class="col-md-5 text-center" id="education">
                 <div class="special-header">
                     <h3 class="accent">Education</h3>
                 </div>
@@ -168,8 +180,6 @@ firebase.auth().onAuthStateChanged(function(user) {
                 <p>MS Mechanical Engineering<br>University of Wisconsin | Madison, WI</p>
                 <p>BA Mathematics & Physics<br>Luther College | Decorah, IA</p>
             </section>
-            <div class="col-md-1">
-            </div>
         </div>
     </div>
     
