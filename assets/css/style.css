@@ -177,9 +177,9 @@ pre code {
     background-color: rgb(74, 89, 40);
     color: white;
     border-radius: 50%;
-    height: 90px;
-    width: 90px;
-    line-height: 90px;
+    height: 80px;
+    width: 80px;
+    line-height: 80px;
 }
 
 #skills img{
@@ -204,12 +204,18 @@ pre code {
     margin-top: -10px;
 }
 
-#resume i {
-    font-size: 100px;
-    color: rgb(74, 89, 40); 
+#resume .align-items-center {
+    height: 100%;
 }
 
+#resume .align-items-center i {
+    margin-bottom: 10px;
+}
 
+#resume i {
+    font-size: 120px;
+    color: rgb(74, 89, 40); 
+}
 
 footer {
     color: white;

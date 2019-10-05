@@ -127,9 +127,7 @@ firebase.auth().onAuthStateChanged(function(user) {
         </div>
         <div class="row">
             <section class="col-md-5 text-center" id="skills">
-                <div class="special-header">
-                    <h3 class="accent">Skills</h3>
-                </div>
+                <h3 class="accent special-header">Skills</h3>
                 <p>See <a href="http://linkedin.com/in/todd-bartelt">LinkedIn</a> for a complete list.
                 <div>
                     <i class="fab fa-html5"></i>
@@ -162,22 +160,30 @@ firebase.auth().onAuthStateChanged(function(user) {
             </section>
 
             <section class="col-md-2 text-center" id="resume">
-                <div class="special-header">
-                    <h3 class="accent">Resum&eacute;</h3>
-                </div>
-                <p>Click to view:</p>
-                <a href="assets/docs/Todd Bartelt Resume 2019 - Software Developer.pdf">
-                    <i class="far fa-file-pdf"></i>
-                </a>
+                <div class="row"><div class="col">
+                    <h3 class="accent special-header">Resum&eacute;</h3>
+                </div></div>
+                <div class="row align-items-center"><div class="col">
+                    <a href="assets/docs/Todd Bartelt Resume 2019 - Software Developer.pdf">
+                        <i class="far fa-file-pdf"></i>
+                    </a>
+                    <p>Click to view</p>
+                </div></div>
             </section>
 
-            <section class="col-md-5 text-center" id="education">
-                <div class="special-header">
-                    <h3 class="accent">Education</h3>
-                </div>
-                <p>Full-Stack Web Development Program<br>University of Kansas Professional and Continuing Education<br><i>Anticipated completion: Nov. 2019</i></p>
-                <p>MS Mechanical Engineering<br>University of Wisconsin | Madison, WI</p>
-                <p>BA Mathematics & Physics<br>Luther College | Decorah, IA</p>
+            <section class="col-md-5 text-center d-flex flex-column justify-content-between" id="education">
+                <div class="row"><div class="col">
+                    <h3 class="accent special-header">Education</h3>
+                </div></div>
+                <div class="row"><div class="col">
+                    <p>Full-Stack Web Development Program<br>University of Kansas Professional and Continuing Education<br><i>Anticipated completion: Nov. 2019</i></p>
+                </div></div>
+                <div class="row"><div class="col">
+                    <p>MS Mechanical Engineering<br>University of Wisconsin | Madison, WI</p>
+                </div></div>
+                <div class="row"><div class="col">
+                    <p>BA Mathematics & Physics<br>Luther College | Decorah, IA</p>
+                </div></div>
             </section>
         </div>
     </div>
