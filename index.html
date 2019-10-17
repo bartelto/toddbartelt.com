@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,16 +8,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Todd Bartelt, Software Developer</title>
     <!-- jQuery CDN -->
-    <script
-        src="https://code.jquery.com/jquery-3.4.1.js"
-        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-        crossorigin="anonymous"></script>
-    <script
-        src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"
-        integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30="
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"
+        integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- Google Fonts -->
     <link rel="preload" href="https://fonts.googleapis.com/css?family=Oswald|Raleway&display=swap" as="font">
     <script src="https://kit.fontawesome.com/9d112d245b.js"></script>
@@ -24,10 +22,12 @@
     <link rel="stylesheet" href="assets/css/style.css">
 
 </head>
+
 <body>
 
     <nav class="navbar navbar-expand-lg navbar-dark" id="my-navbar">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
@@ -56,7 +56,8 @@
                     <p class="lead">Software Developer</p>
                 </div>
                 <div class="col-md-9 crawl-container">
-                    <div class="crawl"><pre><code>function updateMatches() {
+                    <div class="crawl">
+                        <pre><code>function updateMatches() {
     // use AJAX to send a request for match data
     $.get(`api/matches/${currentFBUser.email}`, function(data) {
 
@@ -88,7 +89,8 @@ firebase.auth().onAuthStateChanged(function(user) {
         window.location.href = "/"; // back to login screen
     }
 });
-                    </code></pre></div>
+                    </code></pre>
+                    </div>
                 </div>
             </div>
         </div>
@@ -101,19 +103,29 @@ firebase.auth().onAuthStateChanged(function(user) {
                 <h2>About Me</h2>
             </div>
         </div>
-        
+
         <div class="row">
             <div class="col-lg-1">
             </div>
             <div class="col-lg-3" id="headshot2">
             </div>
             <div class="col-lg-7">
-                <img src="assets/images/Todd-Bartelt-square.jpg" id="headshot" class="img-thumbnail" alt="A handsome web developer">
-                <p>I’m a <strong>software developer</strong> with a mathematics and engineering background, currently adding <strong>full-stack web development</strong> to my list of skills through a program at KU Professional and Continuing Education. My strengths include troubleshooting, clear and precise communication, and teamwork.</p>
+                <img src="assets/images/Todd-Bartelt-square.jpg" id="headshot" class="img-thumbnail"
+                    alt="A handsome web developer">
+                <p>I’m a <strong>software developer</strong> with a mathematics and engineering background, currently
+                    adding <strong>full-stack web development</strong> to my list of skills through a program at KU
+                    Professional and Continuing Education. My strengths include troubleshooting, clear and precise
+                    communication, and teamwork.</p>
 
-                <p><strong>What energizes me?</strong> I love team-based, creative problem-solving and creating software applications that not only work, but have a good look and feel, too. Back in my factory automation days, I developed dozens of successful machine vision software solutions using VB.NET and C#, creating valuable intellectual property that helped win new customers in the process.</p>
-                    
-                <p>I am patient, insightful, and dedicated to exceeding expectations while still making sure the whole team crosses the finish line together. I’m also <strong>open to new opportunities</strong>, so please <a href="mailto:toddfbartelt@gmail.com">contact me</a>!</p></div>
+                <p><strong>What energizes me?</strong> I love team-based, creative problem-solving and creating software
+                    applications that not only work, but have a good look and feel, too. Back in my factory automation
+                    days, I developed dozens of successful machine vision software solutions using VB.NET and C#,
+                    creating valuable intellectual property that helped win new customers in the process.</p>
+
+                <p>I am patient, insightful, and dedicated to exceeding expectations while still making sure the whole
+                    team crosses the finish line together. I’m also <strong>open to new opportunities</strong>, so
+                    please <a href="mailto:toddfbartelt@gmail.com">contact me</a>!</p>
+            </div>
             <div class="col-lg-1">
             </div>
         </div>
@@ -129,65 +141,78 @@ firebase.auth().onAuthStateChanged(function(user) {
             <section class="col-md-5 text-center" id="skills">
                 <h3 class="accent special-header">Skills</h3>
                 <p>See <a href="http://linkedin.com/in/todd-bartelt">LinkedIn</a> for a complete list.
-                <div>
-                    <i class="fab fa-html5"></i>
-                </div>
-                <div>
-                    <i class="fab fa-css3-alt"></i>
-                    <i class="fab fa-bootstrap"></i>
-                </div>
-                <div>
-                    <img src="assets/images/jQuery.png" class="jquery">
-                    <i class="fab fa-js-square"></i>
-                    <i class="fab fa-node-js"></i>
-                </div>
-                <div class="hide-if-mobile">
-                    <img src="assets/images/Firebase.png">
-                    <img src="assets/images/mysql.png">
-                    <img src="assets/images/mongodb.png">
-                    <div class="express">Express</div>
-                </div>
-                <div class="show-if-mobile" hidden>
                     <div>
-                        <!--<img src="assets/images/Firebase.png">-->
+                        <i class="fab fa-html5"></i>
+                    </div>
+                    <div>
+                        <i class="fab fa-css3-alt"></i>
+                        <i class="fab fa-bootstrap"></i>
+                    </div>
+                    <div>
+                        <img src="assets/images/jQuery.png" class="jquery">
+                        <i class="fab fa-js-square"></i>
+                        <i class="fab fa-node-js"></i>
+                    </div>
+                    <div class="hide-if-mobile">
+                        <img src="assets/images/Firebase.png">
                         <img src="assets/images/mysql.png">
                         <img src="assets/images/mongodb.png">
-                    </div>
-                    <div>
                         <div class="express">Express</div>
                     </div>
-                </div>    
+                    <div class="show-if-mobile" hidden>
+                        <div>
+                            <!--<img src="assets/images/Firebase.png">-->
+                            <img src="assets/images/mysql.png">
+                            <img src="assets/images/mongodb.png">
+                        </div>
+                        <div>
+                            <div class="express">Express</div>
+                        </div>
+                    </div>
             </section>
 
             <section class="col-md-2 text-center" id="resume">
-                <div class="row"><div class="col">
-                    <h3 class="accent special-header">Resum&eacute;</h3>
-                </div></div>
-                <div class="row align-items-center"><div class="col">
-                    <a href="assets/docs/Todd Bartelt Resume 2019 - Software Developer.pdf">
-                        <i class="far fa-file-pdf"></i>
-                    </a>
-                    <p>Click to view</p>
-                </div></div>
+                <div class="row">
+                    <div class="col">
+                        <h3 class="accent special-header">Resum&eacute;</h3>
+                    </div>
+                </div>
+                <div class="row align-items-center">
+                    <div class="col">
+                        <a href="assets/docs/Todd Bartelt Resume 2019 - Software Developer.pdf">
+                            <i class="far fa-file-pdf"></i>
+                        </a>
+                        <p>Click to view</p>
+                    </div>
+                </div>
             </section>
 
             <section class="col-md-5 text-center d-flex flex-column justify-content-between" id="education">
-                <div class="row"><div class="col">
-                    <h3 class="accent special-header">Education</h3>
-                </div></div>
-                <div class="row"><div class="col">
-                    <p>Full-Stack Web Development Program<br>University of Kansas Professional and Continuing Education<br><i>Anticipated completion: Nov. 2019</i></p>
-                </div></div>
-                <div class="row"><div class="col">
-                    <p>MS Mechanical Engineering<br>University of Wisconsin | Madison, WI</p>
-                </div></div>
-                <div class="row"><div class="col">
-                    <p>BA Mathematics & Physics<br>Luther College | Decorah, IA</p>
-                </div></div>
+                <div class="row">
+                    <div class="col">
+                        <h3 class="accent special-header">Education</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <p>Full-Stack Web Development Program<br>University of Kansas Professional and Continuing
+                            Education<br><i>Anticipated completion: Nov. 2019</i></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <p>MS Mechanical Engineering<br>University of Wisconsin | Madison, WI</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <p>BA Mathematics & Physics<br>Luther College | Decorah, IA</p>
+                    </div>
+                </div>
             </section>
         </div>
     </div>
-    
+
     <div class="container-fluid main-content" id="portfolio">
         <div class="row">
             <div class="col-md-12 ">
@@ -195,27 +220,49 @@ firebase.auth().onAuthStateChanged(function(user) {
             </div>
         </div>
         <div class="row">
-                <div class="col-md-6 col-lg-4 text-center">
-                        <section class="portfolio-item">
-                            <div class="background">
-                                <img src="assets/images/rewired.png" alt="reWIRED">
-                            </div>
-                            <div class="caption">
-                                <h1>reWIRED</h1>
-                                <p>
-                                    This full-stack Node/Express/mongoDB app scrapes articles from WIRED.com and lets you organize and attach comments to your favorites. 
-                                </p>
-                                <p>
-                                    <a href="http://rewired-scraper.herokuapp.com" target="_blank">
-                                        <i class="fas fa-link"></i>
-                                    </a>
-                                    <a href="https://github.com/bartelto/rewired" target="_blank">
-                                        <i class="fab fa-github-alt"></i>
-                                    </a>
-                                </p>
-                            </div>
-                        </section>
+            <div class="col-md-6 col-lg-4 text-center">
+                <section class="portfolio-item">
+                    <div class="background">
+                        <img src="assets/images/total-recall.jpg" alt="Total Recall">
                     </div>
+                    <div class="caption">
+                        <h1>Total Recall</h1>
+                        <p>
+                            See if you can click each of Arnie's pictures exactly once in this this React web application.
+                        </p>
+                        <p>
+                            <a href="http://bartelto.github.io/total-recall" target="_blank">
+                                <i class="fas fa-link"></i>
+                            </a>
+                            <a href="https://github.com/bartelto/total-recall" target="_blank">
+                                <i class="fab fa-github-alt"></i>
+                            </a>
+                        </p>
+                    </div>
+                </section>
+            </div>
+            <div class="col-md-6 col-lg-4 text-center">
+                <section class="portfolio-item">
+                    <div class="background">
+                        <img src="assets/images/rewired.png" alt="reWIRED">
+                    </div>
+                    <div class="caption">
+                        <h1>reWIRED</h1>
+                        <p>
+                            This full-stack Node/Express/mongoDB app scrapes articles from WIRED.com and lets you
+                            organize and attach comments to your favorites.
+                        </p>
+                        <p>
+                            <a href="http://rewired-scraper.herokuapp.com" target="_blank">
+                                <i class="fas fa-link"></i>
+                            </a>
+                            <a href="https://github.com/bartelto/rewired" target="_blank">
+                                <i class="fab fa-github-alt"></i>
+                            </a>
+                        </p>
+                    </div>
+                </section>
+            </div>
             <div class="col-md-6 col-lg-4 text-center">
                 <section class="portfolio-item">
                     <div class="background">
@@ -224,7 +271,8 @@ firebase.auth().onAuthStateChanged(function(user) {
                     <div class="caption">
                         <h1>Game Spark</h1>
                         <p>
-                            This full-stack Node.js/Express/Sequelize/MySQL app creates a social media portal for tabletop gamers! 
+                            This full-stack Node.js/Express/Sequelize/MySQL app creates a social media portal for
+                            tabletop gamers!
                         </p>
                         <p>
                             <a href="http://amazing-people.herokuapp.com" target="_blank">
@@ -245,7 +293,8 @@ firebase.auth().onAuthStateChanged(function(user) {
                     <div class="caption">
                         <h1>Burger Meister</h1>
                         <p>
-                            This full-stack Node.js/Express/MySQL app lets you order up (and gobble down) your favorite burgers. 
+                            This full-stack Node.js/Express/MySQL app lets you order up (and gobble down) your favorite
+                            burgers.
                         </p>
                         <p>
                             <a href="http://burger-meister.herokuapp.com" target="_blank">
@@ -266,7 +315,7 @@ firebase.auth().onAuthStateChanged(function(user) {
                     <div class="caption">
                         <h1>MuppetMate</h1>
                         <p>
-                            Find your true Muppet companion with this full-stack app using Node.js and Express. 
+                            Find your true Muppet companion with this full-stack app using Node.js and Express.
                         </p>
                         <p>
                             <a href="http://muppetmate.herokuapp.com" target="_blank">
@@ -288,7 +337,7 @@ firebase.auth().onAuthStateChanged(function(user) {
                     <div class="caption">
                         <h1>Bamazon</h1>
                         <p>
-                            An Amazon-like storefront, built using Node.js and MySQL. 
+                            An Amazon-like storefront, built using Node.js and MySQL.
                         </p>
                         <p>
                             <a href="https://www.youtube.com/watch?v=RVo-sRbADms" target="_blank">
@@ -302,7 +351,7 @@ firebase.auth().onAuthStateChanged(function(user) {
                 </section>
             </div>
 
-            <div class="col-md-6 col-lg-4 text-center">
+            <!--<div class="col-md-6 col-lg-4 text-center">
                 <section class="portfolio-item">
                     <div class="background">
                         <img src="assets/images/mystery-inventor.gif" alt="Mystery Inventor">
@@ -319,7 +368,7 @@ firebase.auth().onAuthStateChanged(function(user) {
                         </p>
                     </div>
                 </section>
-            </div>
+            </div>-->
 
             <div class="col-md-6 col-lg-4 text-center">
                 <section class="portfolio-item">
@@ -427,7 +476,7 @@ firebase.auth().onAuthStateChanged(function(user) {
                     </div>
                 </section>
             </div>-->
-            
+
             <!--<div class="col-md-6 col-lg-4 text-center">
                 <section class="portfolio-item">
                     <div class="background">
@@ -484,8 +533,13 @@ firebase.auth().onAuthStateChanged(function(user) {
 
     <!-- Optional JavaScript -->
     <!-- jQuery first (above), then Popper.js, then Bootstrap JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
     <script src="assets/javascript/code.js"></script>
 </body>
+
 </html>
