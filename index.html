@@ -57,38 +57,37 @@
                 </div>
                 <div class="col-md-9 crawl-container">
                     <div class="crawl">
-                        <pre><code>function updateMatches() {
-    // use AJAX to send a request for match data
-    $.get(`api/matches/${currentFBUser.email}`, function(data) {
+                        <pre><code>const Reservations = () => {
+    const { currentUser } = useContext(AuthContext);
+    const user = useSelector(state => state.user);
+    const [events, setEvents] = useState([]);
+    const dispatch = useDispatch();
 
-        if (data.length === 0) {
-            $("#matches-display-section").append("&lt;h3&gt;Sorry, you have no matches!&lt;h3&gt;");
-        } else {
-            // copy the template's contents and add them to a new &lt;div&gt;
-            data.forEach( function(match) {
-                let newMatch = $profileTemplate.children().clone().removeAttr("hidden").appendTo("#matches-display-section");
-                newMatch.attr("data-user-id",match.id);
-                newMatch.find(".match-name").text(match.screenName); 
-                newMatch.attr("data-email",match.authId);
-                newMatch.find(".match-image").attr("src",match.imageUrl);
+    // loads once when the component mounts:
+    useEffect(
+        () => {
+            // load user info into global state (Redux) if we haven't already
+            getUserData(currentUser.email, (user) => {
+                dispatch(updateUser(user));
+                // load user data from database
+                API.getEventsByUser(user._id)
+                    .then(res => {
+                        setEvents(res.data);
+                    })
+                    .catch(err => console.log(err));
             });
-        }
-    });
-}
+        },
+        []);
 
-// Firebase authentication
-firebase.auth().onAuthStateChanged(function(user) {
-    if (user) {
-        // User is signed in.
-        console.log(user.email + " is logged in.");
-        currentFBUser = user;
-        updateMatches();
-    } else {
-        // User is signed out.
-        console.log("No user logged in.");
-        window.location.href = "/"; // back to login screen
+    const getUserData = (email, callback) => {
+        API.getUser(email)
+            .then(res => {
+                console.log(res.data[0]);
+                // now push the user data into global state
+                callback(res.data[0]);
+            })
+            .catch(err => console.log(err));
     }
-});
                     </code></pre>
                     </div>
                 </div>
@@ -112,10 +111,8 @@ firebase.auth().onAuthStateChanged(function(user) {
             <div class="col-lg-7">
                 <img src="assets/images/Todd-Bartelt-square.jpg" id="headshot" class="img-thumbnail"
                     alt="A handsome web developer">
-                <p>I’m a <strong>software developer</strong> with a mathematics and engineering background, currently
-                    adding <strong>full-stack web development</strong> to my list of skills through a program at KU
-                    Professional and Continuing Education. My strengths include troubleshooting, clear and precise
-                    communication, and teamwork.</p>
+                <p>I’m a <strong>full-stack web developer</strong> with a background in mathematics and engineering.
+                    My strengths include troubleshooting, clear and precise communication, and teamwork.</p>
 
                 <p><strong>What energizes me?</strong> I love team-based, creative problem-solving and creating software
                     applications that not only work, but have a good look and feel, too. Back in my factory automation
@@ -196,7 +193,7 @@ firebase.auth().onAuthStateChanged(function(user) {
                 <div class="row">
                     <div class="col">
                         <p>Full-Stack Web Development Program<br>University of Kansas Professional and Continuing
-                            Education<br><i>Anticipated completion: Nov. 2019</i></p>
+                            Education</p>
                     </div>
                 </div>
                 <div class="row">
@@ -223,12 +220,34 @@ firebase.auth().onAuthStateChanged(function(user) {
             <div class="col-md-6 col-lg-4 text-center">
                 <section class="portfolio-item">
                     <div class="background">
+                        <img src="assets/images/trackmeet.png" alt="Trackmeet">
+                    </div>
+                    <div class="caption">
+                        <h1>TrackMeet</h1>
+                        <p>
+                            A full-stack MERN app for reserving meeting spaces. Features SMS confirmations using Nexmo.
+                        </p>
+                        <p>
+                            <a href="http://track-meet.herokuapp.com" target="_blank">
+                                <i class="fas fa-link"></i>
+                            </a>
+                            <a href="https://github.com/kentarosmith/trackmeet" target="_blank">
+                                <i class="fab fa-github-alt"></i>
+                            </a>
+                        </p>
+                    </div>
+                </section>
+            </div>
+            <div class="col-md-6 col-lg-4 text-center">
+                <section class="portfolio-item">
+                    <div class="background">
                         <img src="assets/images/booklooker.jpg" alt="Booklooker">
                     </div>
                     <div class="caption">
                         <h1>Booklooker</h1>
                         <p>
-                            With this MERN stack app employing the Google Books API, bibliophiles can search for literature and save their favorites for later browsing.
+                            With this MERN stack app employing the Google Books API, bibliophiles can search for
+                            literature and save their favorites for later browsing.
                         </p>
                         <p>
                             <a href="http://booklooker.herokuapp.com" target="_blank">
@@ -351,7 +370,7 @@ firebase.auth().onAuthStateChanged(function(user) {
                 </section>
             </div>
 
-            <div class="col-md-6 col-lg-4 text-center">
+            <!-- <div class="col-md-6 col-lg-4 text-center">
                 <section class="portfolio-item">
                     <div class="background">
                         <img src="assets/images/bamazon.gif" alt="Bamazon">
@@ -371,7 +390,7 @@ firebase.auth().onAuthStateChanged(function(user) {
                         </p>
                     </div>
                 </section>
-            </div>
+            </div> -->
 
             <!--<div class="col-md-6 col-lg-4 text-center">
                 <section class="portfolio-item">
