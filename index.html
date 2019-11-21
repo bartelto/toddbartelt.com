@@ -18,6 +18,7 @@
     <!-- Google Fonts -->
     <link rel="preload" href="https://fonts.googleapis.com/css?family=Oswald|Raleway&display=swap" as="font">
     <script src="https://kit.fontawesome.com/9d112d245b.js"></script>
+    <script src="https://code.iconify.design/1/1.0.3/iconify.min.js"></script>
     <!-- My stylesheet -->
     <link rel="stylesheet" href="assets/css/style.css">
 
@@ -117,7 +118,9 @@
                 <p><strong>What energizes me?</strong> I love team-based, creative problem-solving and creating software
                     applications that not only work, but have a good look and feel, too. Back in my factory automation
                     days, I developed dozens of successful machine vision software solutions using VB.NET and C#,
-                    creating valuable intellectual property that helped win new customers in the process.</p>
+                    creating valuable intellectual property that helped win new customers in the process. In 2019, I updated
+                    my skill set by learning the <strong>MERN stack (MongoDB, Express, React and Node.js)</strong> via an intensive, 24-week program at
+                    the University of Kansas.</p>
 
                 <p>I am patient, insightful, and dedicated to exceeding expectations while still making sure the whole
                     team crosses the finish line together. I’m also <strong>open to new opportunities</strong>, so
@@ -137,35 +140,57 @@
         <div class="row">
             <section class="col-md-5 text-center" id="skills">
                 <h3 class="accent special-header">Skills</h3>
-                <p>See <a href="http://linkedin.com/in/todd-bartelt">LinkedIn</a> for a complete list.
+                <p>See <a href="http://linkedin.com/in/todd-bartelt">LinkedIn</a> for a complete list.</p>
+                <div class="hide-if-mobile">
                     <div>
                         <i class="fab fa-html5"></i>
-                    </div>
-                    <div>
                         <i class="fab fa-css3-alt"></i>
                         <i class="fab fa-bootstrap"></i>
+                        <div class="invisible"></div>
                     </div>
-                    <div>
-                        <img src="assets/images/jQuery.png" class="jquery">
+                    <div class="skills-row">
+                        <div class="jquery"></div>
+                        <i class="fab fa-react"></i>
+                        <div class="redux"></div>
+                    </div>
+
+                    <div class="skills-row">
                         <i class="fab fa-js-square"></i>
                         <i class="fab fa-node-js"></i>
+                        <div class="express"></div>
+                        <div class="invisible"></div>
                     </div>
-                    <div class="hide-if-mobile">
+                    <div class="skills-row">
                         <img src="assets/images/Firebase.png">
                         <img src="assets/images/mysql.png">
                         <img src="assets/images/mongodb.png">
-                        <div class="express">Express</div>
                     </div>
-                    <div class="show-if-mobile" hidden>
-                        <div>
-                            <!--<img src="assets/images/Firebase.png">-->
-                            <img src="assets/images/mysql.png">
-                            <img src="assets/images/mongodb.png">
-                        </div>
-                        <div>
-                            <div class="express">Express</div>
-                        </div>
+                </div>
+                <div class="show-if-mobile" hidden>
+                    <div>
+                        <i class="fab fa-html5"></i>
+                        <i class="fab fa-css3-alt"></i>
                     </div>
+                    <div class="skills-row">
+                        <i class="fab fa-bootstrap"></i>
+                        <div class="jquery"></div>
+                        <i class="fab fa-react"></i>
+                    </div>
+                    <div class="skills-row">
+                        <div class="redux"></div>
+                        <i class="fab fa-js-square"></i>
+                    </div>
+                   
+                    <div class="skills-row">
+                        <img src="assets/images/Firebase.png">
+                        <img src="assets/images/mysql.png">
+                        <img src="assets/images/mongodb.png">
+                    </div>
+                    <div class="skills-row">
+                        <i class="fab fa-node-js"></i>
+                        <div class="express"></div>
+                    </div>
+                </div>
             </section>
 
             <section class="col-md-2 text-center" id="resume">
@@ -193,7 +218,7 @@
                 <div class="row">
                     <div class="col">
                         <p>Full-Stack Web Development Program<br>University of Kansas Professional and Continuing
-                            Education</p>
+                            Education | Overland Park, KS</p>
                     </div>
                 </div>
                 <div class="row">
@@ -217,7 +242,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-6 col-lg-4 text-center">
+            <div class="col-lg-6 text-center">
                 <section class="portfolio-item">
                     <div class="background">
                         <img src="assets/images/trackmeet.png" alt="Trackmeet">
@@ -225,7 +250,13 @@
                     <div class="caption">
                         <h1>TrackMeet</h1>
                         <p>
-                            A full-stack MERN app for reserving meeting spaces. Features SMS confirmations using Nexmo.
+                            This full-stack MERN app lets users reserve meeting spaces, and then view and delete their own reservations.
+                        </p>
+                        <p>
+                            <strong>Features:</strong> Firebase Authorization, Nexmo SMS API
+                        </p>
+                        <p>
+                            <strong>Guest account:</strong> guest@gmail.com / 'password'
                         </p>
                         <p>
                             <a href="http://track-meet.herokuapp.com" target="_blank">
@@ -238,7 +269,7 @@
                     </div>
                 </section>
             </div>
-            <div class="col-md-6 col-lg-4 text-center">
+            <div class="col-lg-6 text-center">
                 <section class="portfolio-item">
                     <div class="background">
                         <img src="assets/images/booklooker.jpg" alt="Booklooker">
@@ -246,8 +277,11 @@
                     <div class="caption">
                         <h1>Booklooker</h1>
                         <p>
-                            With this MERN stack app employing the Google Books API, bibliophiles can search for
+                            This MERN stack app lets bibliophiles search for
                             literature and save their favorites for later browsing.
+                        </p>
+                        <p>
+                            <strong>Features:</strong> MongoDB, React, Nodejs, Google Books API
                         </p>
                         <p>
                             <a href="http://booklooker.herokuapp.com" target="_blank">
@@ -260,7 +294,62 @@
                     </div>
                 </section>
             </div>
-            <div class="col-md-6 col-lg-4 text-center">
+          
+            <div class="col-lg-6 text-center">
+                <section class="portfolio-item">
+                    <div class="background">
+                        <img src="assets/images/rewired.png" alt="reWIRED">
+                    </div>
+                    <div class="caption">
+                        <h1>reWIRED</h1>
+                        <p>
+                            This full-stack app scrapes articles from WIRED.com and lets you
+                            organize and attach comments to your favorites.
+                        </p>
+                        <p>
+                            <strong>Features:</strong> Node.js, Express, MongoDB
+                        </p>
+                        <p>
+                            <a href="http://rewired-scraper.herokuapp.com" target="_blank">
+                                <i class="fas fa-link"></i>
+                            </a>
+                            <a href="https://github.com/bartelto/rewired" target="_blank">
+                                <i class="fab fa-github-alt"></i>
+                            </a>
+                        </p>
+                    </div>  
+                </section>
+            </div>
+            <div class="col-lg-6 text-center">
+                <section class="portfolio-item">
+                    <div class="background">
+                        <img src="assets/images/game-spark.png" alt="Game Spark">
+                    </div>
+                    <div class="caption">
+                        <h1>Game Spark</h1>
+                        <p>
+                            This full-stack app creates a social media portal for
+                            tabletop gamers, matching you to other users interested in the same games.
+                        </p>
+                        <p>
+                            <strong>Features:</strong>  Node.js, Express, Sequelize, MySQL, Board Game Atlas API
+                        </p>
+                        <p>
+                            <strong>Guest account:</strong> guest@gmail.com / 'password'
+                        </p>
+                        <p>
+                            <a href="http://amazing-people.herokuapp.com" target="_blank">
+                                <i class="fas fa-link"></i>
+                            </a>
+                            <a href="https://github.com/bartelto/project-2" target="_blank">
+                                <i class="fab fa-github-alt"></i>
+                            </a>
+                        </p>
+                    </div>
+                </section>
+            </div>
+
+              <!-- <div class="col-md-6 col-lg-4 text-center">
                 <section class="portfolio-item">
                     <div class="background">
                         <img src="assets/images/total-recall.jpg" alt="Total Recall">
@@ -281,52 +370,8 @@
                         </p>
                     </div>
                 </section>
-            </div>
-            <div class="col-md-6 col-lg-4 text-center">
-                <section class="portfolio-item">
-                    <div class="background">
-                        <img src="assets/images/rewired.png" alt="reWIRED">
-                    </div>
-                    <div class="caption">
-                        <h1>reWIRED</h1>
-                        <p>
-                            This full-stack Node/Express/mongoDB app scrapes articles from WIRED.com and lets you
-                            organize and attach comments to your favorites.
-                        </p>
-                        <p>
-                            <a href="http://rewired-scraper.herokuapp.com" target="_blank">
-                                <i class="fas fa-link"></i>
-                            </a>
-                            <a href="https://github.com/bartelto/rewired" target="_blank">
-                                <i class="fab fa-github-alt"></i>
-                            </a>
-                        </p>
-                    </div>
-                </section>
-            </div>
-            <div class="col-md-6 col-lg-4 text-center">
-                <section class="portfolio-item">
-                    <div class="background">
-                        <img src="assets/images/game-spark.png" alt="Game Spark">
-                    </div>
-                    <div class="caption">
-                        <h1>Game Spark</h1>
-                        <p>
-                            This full-stack Node.js/Express/Sequelize/MySQL app creates a social media portal for
-                            tabletop gamers!
-                        </p>
-                        <p>
-                            <a href="http://amazing-people.herokuapp.com" target="_blank">
-                                <i class="fas fa-link"></i>
-                            </a>
-                            <a href="https://github.com/bartelto/project-2" target="_blank">
-                                <i class="fab fa-github-alt"></i>
-                            </a>
-                        </p>
-                    </div>
-                </section>
-            </div>
-            <div class="col-md-6 col-lg-4 text-center">
+            </div> -->
+            <!-- <div class="col-md-6 col-lg-4 text-center">
                 <section class="portfolio-item">
                     <div class="background">
                         <img src="assets/images/burger-meister.png" alt="Burger Meister">
@@ -368,7 +413,7 @@
                         </p>
                     </div>
                 </section>
-            </div>
+            </div> -->
 
             <!-- <div class="col-md-6 col-lg-4 text-center">
                 <section class="portfolio-item">
@@ -411,7 +456,7 @@
                 </section>
             </div>-->
 
-            <div class="col-md-6 col-lg-4 text-center">
+            <!-- <div class="col-md-6 col-lg-4 text-center">
                 <section class="portfolio-item">
                     <div class="background">
                         <img src="assets/images/giftastic.jpg" alt="GIFtastic">
@@ -431,7 +476,7 @@
                         </p>
                     </div>
                 </section>
-            </div>
+            </div> -->
 
             <!--<div class="col-md-6 col-lg-4 text-center">
                 <section class="portfolio-item">
@@ -455,7 +500,7 @@
                 </section>
             </div>-->
 
-            <div class="col-md-6 col-lg-4 text-center">
+            <!-- <div class="col-md-6 col-lg-4 text-center">
                 <section class="portfolio-item">
                     <div class="background">
                         <img src="assets/images/war-of-words.png" alt="War of Words">
@@ -475,7 +520,7 @@
                         </p>
                     </div>
                 </section>
-            </div>
+            </div> -->
 
             <!--<div class="col-md-6 col-lg-4 text-center">
                 <section class="portfolio-item">

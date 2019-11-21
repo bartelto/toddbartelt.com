@@ -170,9 +170,12 @@ pre code {
     background: #ffffff;
 }
 
+.skills-row {
+    margin-top: -7px;
+}
+
 #skills i,
-#skills img,
-.express {
+#skills img {
     font-size: 50px;
     background-color: rgb(74, 89, 40);
     color: white;
@@ -184,24 +187,44 @@ pre code {
 
 #skills img{
     padding: 20px;
-    margin-top: -10px;
 }   
 
-#skills i {
-    margin-top: -10px;
-    
-}
-
-#skills .jquery {
-    margin-top: -28px;
+.jquery {
+    display: inline-block;
+    background: url(../images/jquery.svg) rgb(74, 89, 40) no-repeat center center;
+    background-size:65%;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    margin-bottom: -21px;
 }
 
 .express {
     display: inline-block;
-    font-size: 20px;
-    font-family: "helvetica neue", "open sans", sans-serif;
-    font-weight: 100;
-    margin-top: -10px;
+    background: url(../images/express-logo-white.svg) rgb(74, 89, 40) no-repeat center center;
+    background-size: 80%;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    margin-bottom: -21px;
+}
+
+.redux {
+    display: inline-block;
+    background-color: red;
+    border-radius: 50%;
+    padding: 20px;
+    height: 80px;
+    width: 80px;
+    background: url('https://api.iconify.design/simple-icons:redux.svg?color=%23ffffff&width=45px&height=45px') rgb(74, 89, 40) no-repeat 50% 41%;
+    margin-bottom: -21px;
+}
+
+.invisible {
+    display: inline-block;
+    height: 80px;
+    width: 80px;
+    margin-bottom: -21px;
 }
 
 #resume .align-items-center {
@@ -281,12 +304,16 @@ input[type="submit" i]:hover {
     display: inline-block;
     position: relative;
     margin-bottom: 20px;
+    width: 500px;
+    height: 300px;
+    box-shadow: 0 15px 30px -10px rgba(0,0,0,0.6);
 }
 
-.portfolio-item img, .background{
-    width: 300px;
-    height: 225px;
-    box-shadow: 0 15px 30px -10px rgba(0,0,0,0.6);
+.background img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: top;
 }
 
 .caption {  
@@ -314,7 +341,11 @@ input[type="submit" i]:hover {
     margin: 0;
     line-height: 20px;
     margin-bottom: 5px;
+}
 
+.caption strong {
+    color: white;
+    font-style: italic;
 }
 
 .caption i {
@@ -370,6 +401,13 @@ input[type="submit" i]:hover {
 }
 
 /* media queries */
+
+@media screen and (max-width: 575.98px) {
+    .portfolio-item {
+        width: 100%;
+    }
+}
+
 @media screen and (max-width: 736px) {
     .row > section, .row > article {
         margin-bottom: 2em;
