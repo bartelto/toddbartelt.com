@@ -313,7 +313,6 @@ input[type="submit" i]:hover {
     width: 100%;
     height: 300px;
     object-fit: cover;
-    object-position: top;
 }
 
 .caption {  
@@ -433,6 +432,9 @@ input[type="submit" i]:hover {
         display: none;
     }
 */
+}
+
+@media screen and (max-width: 900px) {
     .hide-if-mobile {
         display: none;
     }
@@ -445,5 +447,11 @@ input[type="submit" i]:hover {
 @media screen and (max-width: 992px) {
     #headshot {
         display: inline!important;
+    }
+}
+
+@media screen and ( max-height: 375px ) {
+    #skip-to-about {
+        display: none;
     }
 }
